@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Library</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+        <div class="container-fluid py-3">
+            <a class="navbar-brand fw-bolder d-flex align-items-center justify-content-between shadow" href="#">
+                <img src="./img/logo.png" class="me-3" style="margin-top: -5px" height="30">
+                Colibri Data Visualization
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active btn d-flex justify-content-start align-items-center"
+                            aria-current="page" href="#">
+                            <i class="fa fa-home me-3"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link me-2">
+                            <i class="fa-regular fa-bell fa-xl" style="color: #909090"></i>
+                            <span class="notif-highlight"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item account-control card">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample" style="z-index: 2">
+                            <img src="./img/pic.png" alt="">
+                            Raka Budi
+                            <i class="fa fa-chevron-down me-2" style="color: #27A857"></i>
+                        </a>
+                        <div class="collapse" id="collapseExample"
+                            style="position: absolute !important; z-index: 0 !important; top: 10px; border: none; border-radius: 15px; width: 100%">
+                            <div class="card card-body"
+                                style="border: none; border-radius: 15px; padding-top: 45px; text-align:center">
+                                <a href="javascript:void(0)" class="drop-link">Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid my-4">
+        <div class="header-container d-flex justify-content-between align-items-center">
+            <h4 class="header-text">Create New Data</h4>
+            <a href="javascript:void(0)" class="header-link">
+                More Templates
+                <i class="fa fa-chevron-right fa-sm ms-2"></i>
+            </a>
+        </div>
+        <div class="card card-container card-container-header">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="card mb-2" onclick="window.location.href = './create.html'" style="cursor: pointer">
+                            <div class="card-body d-flex align-items-center justify-content-center">
+                                <i class="fa fa-plus" style="font-size: 5rem; color: #A0AEC0;"></i>
+                            </div>
+                        </div>
+                        <p class="mb-0">Blank</p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card mb-2">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <img src="./img/tmp.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <p class="mb-0">Blank</p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card mb-2">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <img src="./img/tmp.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <p class="mb-0">Blank</p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card mb-2">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <img src="./img/tmp.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <p class="mb-0">Blank</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-container d-flex justify-content-between align-items-center">
+            <h4 class="header-text">Recent</h4>
+            <form action="">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                        aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+                </div>
+            </form>
+        </div>
+        <div class="card card-container">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="card mb-3">
+                            <div class="card-body d-flex justify-content-center align-items-center h-100">
+                                <img src="./img/tmp.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                                <p class="mb-0 title-text">Pengadaan Akomodasi Perkantoran</p>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card mb-3">
+                            <div class="card-body d-flex justify-content-center align-items-center h-100">
+                                <img src="./img/tmp.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                                <p class="mb-0 title-text">Pengadaan Akomodasi Perkantoran</p>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card mb-3">
+                            <div class="card-body d-flex justify-content-center align-items-center h-100">
+                                <img src="./img/tmp.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                                <p class="mb-0 title-text">Pengadaan Akomodasi Perkantoran</p>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card mb-3">
+                            <div class="card-body d-flex justify-content-center align-items-center h-100">
+                                <img src="./img/tmp.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                                <p class="mb-0 title-text">Pengadaan Akomodasi Perkantoran</p>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card mb-3">
+                            <div class="card-body d-flex justify-content-center align-items-center h-100">
+                                <img src="./img/tmp.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                                <p class="mb-0 title-text">Pengadaan Akomodasi Perkantoran</p>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card mb-3">
+                            <div class="card-body d-flex justify-content-center align-items-center h-100">
+                                <img src="./img/tmp.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                                <p class="mb-0 title-text">Pengadaan Akomodasi Perkantoran</p>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card mb-3">
+                            <div class="card-body d-flex justify-content-center align-items-center h-100">
+                                <img src="./img/tmp.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                                <p class="mb-0 title-text">Pengadaan Akomodasi Perkantoran</p>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card mb-3">
+                            <div class="card-body d-flex justify-content-center align-items-center h-100">
+                                <img src="./img/tmp.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                                <p class="mb-0 title-text">Pengadaan Akomodasi Perkantoran</p>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
